@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body id="body">
+    <!--Navigation-->
+    <nav>
+        <div class="Mode">
+            <button onclick=" changBgDark()">Darkmode</button>
+            <button onclick=" changBgWhite()">LightMode</button>
+        </div>
+        <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">services</a></li>
+            <li><a href="">contact us</a></li>
+
+        </ul>
+      
+    </nav>
+    <!--Navigation!!-->
+    
+    <!-- Home -->
+    
+    <section class="home container" id="home">
+            <div class="text">
+                <h1>I'm Nasser Esmail</h1>
+            <p>Hello
+                I am Web Developer
+                & Computer Trainer</p>
+            <p class="details">
+              My name is Nasser Esmail, I am Web Developer and also a Computer Trainer .If you have any web project or you need any special course in the computer field contact me .
+                 I make your project as soon as possible.
+            </p>
+
+            </div>
+            <div class="image">
+                <img  id="img"src="img/picture.jpg" alt=""onclick="showimg()">
+            </div>
+    </section>
+    <!-- Home !! -->
+
+    <!-- about -->
+    <div class="title container">
+        <h2>About</h2>
+    </div>
+    <section class="about container">
+        <div class="skills">   
+        <div class="progress-bar">
+    
+            <h2 class="title">My skills</h2>
+
+            <div class="progress">
+                <h3>Front End Developer <span>80%</span></h3>
+                <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+                <h3>Trainer <span>70%</span></h3>
+                <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+                <h3>Desk to application<span>60%</span></h3>
+                <div class="bar"><span></span></div>
+            </div>
+        </div>
+
+        <!-- experience -->
+
+        <div class="experience">
+            <div class="title ">
+                <h2>Experience</h2>
+            </div>
+            <div class="card">
+                <div class="title">
+                    <h2>Front End Developer</h2>
+                </div>
+                <div class="text">
+                    <p>+1 years</p>
+                    <p>Design and Build web site </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="title">
+                    <h2>Desk to application</h2>
+                </div>
+                <div class="text">
+                    <p>+2 years</p>
+                    <p>  Building and Developement Desktop application by c# and sql server</p>
+                </div>
+            </div><div class="card">
+                <div class="title">
+                    <h2>Trainer</h2>
+                </div>
+                <div class="text">
+                    <p>+1 years</p>
+                    <p>Given some lectures in computer engineering fields.</p>
+                </div>
+        </div>
+
+    </section>
+    <!-- about!! -->
+   <!-- services -->
+
+   <div class="title container">
+    <h2>Services</h2>
+    </div>
+ <section class="services container">
+  
+        <div class="card">
+            <div class="header">
+                <p><i class="fas fa-laptop-code"></i></p>
+                <h3>Front End Developer</h3>
+            </div>
+            <div class="body">
+                <p class="text">
+                    Design and Build web site 
+                </p>
+            
+            </div>
+        </div>
+        <div class="card">
+            <div class="header">
+                <p><i class="fas fa-chalkboard-teacher"></i></p>
+                <h3>Trainer</h3>
+            </div>
+            <div class="body">
+                <p class="text">
+                    Given lecture in computer  and programming language 
+                </p>
+            
+            </div>
+        </div>
+        <div class="card">
+            <div class="header">
+                <p><i class="fas fa-desktop"></i></p>
+                <h3>Desk to application</h3>
+            </div>
+            <div class="body">
+                <p class="text">
+                   Building and Developement Deskto application
+                </p>
+               
+            </div>
+        </div>
+   <div class="prev">
+     <div class="imgcard" >
+         <h3>Buildpuls company  </h3>
+            <img src="img/1.jpg" alt="" >
+        </div>
+        <div class="imgcard">
+            <h3>Protflio </h3>
+               <img src="img/2.jpg" alt="">
+           </div>
+           <div class="imgcard">
+            <h3>Enhancement consumer services </h3>
+               <img src="img/3.jpg" alt="">
+           </div>
+   </div>
+ </section>   
+   <!-- services -->
+   
+<!-- contact -->
+<div class="title container">
+    <h2>Contact</h2>
+</div>
+<div class="contact-form container">
+    <form  id="form">
+        <div class="group" >
+               <label for="name"></label>
+            <input id="name" type="text"  placeholder="name" />
+            
+        </div>
+        <div class="group">
+               <label for="name"></label>
+            <input id ="email" type="email"  name="email"  placeholder="email"  />
+        
+        </div>
+        <div class="group">
+               <label for="subject"></label>
+            <input id="subject" type="text"  name="subject"  placeholder="subject" />
+            <p class="help-block text-danger"></p>
+        </div>
+        <div class="group">
+               <label for="message"></label>
+            <textarea id="message" name="message"  placeholder="message" ></textarea>
+            
+        </div>
+        <div>
+            <button  >send </button>
+        </div>
+    </form>
+   <div class="Social-media">
+    <ul class="Social">
+        <li><a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a></li>
+       <li><a href="#">  <i class="fab fa-twitter-square"></i> Twitter</a></li>
+       <li><a href="#"> <i class="fab fa-linkedin"></i> linkedin</a></li>
+   </ul>
+   </div>
+</div>
+<!-- contact -->
+
+
+<!--footer-->
+<footer>
+    <div class="text">Nasser &copy; 2022. All Rights Reserved.</div>
+</footer>
+<!--End footer-->
+       
+<script src="js/main.js"></script>
+</body>
+</html>

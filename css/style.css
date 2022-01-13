@@ -1,0 +1,305 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: calibri;
+}
+
+.container{
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+/* <!--Navigation--> */
+nav{
+    position: relative;
+}
+nav .Mode{
+position: absolute;
+right: 10%;
+}
+nav .Mode button{
+    height: 40px;
+    line-height: 40px;
+    background: #000;
+    border: none;
+    width: 100px;
+    color: #ffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+nav .Mode button:hover{
+    background: #505050;
+    color: #fff;
+}
+
+nav ul{
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+    padding: 5px;
+}
+nav ul li a{
+    color:#000;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+/********** home*******/
+.home{
+    display: flex;
+    justify-content: space-evenly;
+}
+.home p {
+    margin: 20px 10px;
+    font-size: 19px;
+
+}
+.home img{
+    width: 400px;
+    border-radius: 10px;
+    z-index: 999;
+    opacity: 1;
+}
+@media(max-width:670px){
+    .home{
+        flex-wrap: wrap;}
+    .home .about img{
+        width: 300px;
+    }
+    nav ul{
+        display: none;
+    }
+    .details{
+        display: none;
+    }
+}
+
+/* *******about ********/
+.skills {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.skills .progress-bar{
+    width:40%;
+}
+.skills .experience{
+    width:40%
+}
+
+.skills  .progress-bar .progress{
+    padding:1rem 0;
+}
+
+.skills .progress-bar .progress h3{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.skills  .progress-bar .progress .bar{
+    height:10px ;
+    width:100%;
+    border: 3px solid #505050;
+    border-radius: 25px;
+} 
+
+.skills .progress-bar .progress .bar span{
+    display: block;
+    background:#505050;
+    border-radius: 25px;
+    height: 100%;
+}
+
+.skills  .progress-bar .progress:nth-child(2) .bar span{
+    width:85%;
+}
+
+.skills  .progress-bar .progress:nth-child(3) .bar span{
+    width:70%;
+}
+
+.skills  .progress-bar .progress:nth-child(4) .bar span{
+    width:70%;
+}
+
+.about .experience .card{
+    margin-top: 10px;
+}
+.about .experience .card h2{
+    width: 250px;
+    border-bottom: 2px  solid #000;
+}
+.about .experience .card .text p{
+    padding-left: 10px;
+    
+}
+@media(max-width:670px){
+    .skills .progress-bar{
+        width:100%;
+    }
+    .skills .experience{
+        width:100%
+    }
+
+}
+/*********Services************/
+.services {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.services  .card{
+    background-color: rgb(0, 0, 0);
+    width: 30%;
+    margin: 10px;
+    padding:20px;
+   
+}
+.services .header p{
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+}
+.services .header h3{
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+}
+.services .body p{
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+.services  .card:hover{
+   background: #505050;
+   transition: 0.5s;
+}
+.services .prev{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+  
+}
+.services .prev h3{
+ text-align: center;
+}
+.services .imgcard{
+    margin: 5px;
+   
+}
+
+.services .imgcard:hover{
+    
+    transform: translateX(0px) translateY(40px);
+    transition: 0.5s;
+}
+.services .prev img{
+    width:300px;
+  
+}
+
+/******Media*****/
+@media(max-width:670px){
+    .services  .card{
+        background-color: rgb(0, 0, 0);
+        width: 100%;}
+}
+/* contact */
+.contact-form
+{
+    width: 100%;
+}
+form{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color: black;
+    padding:10px;
+}
+form .group{
+    width:90%;
+    margin: 10px;
+}
+form .group input ,textarea{
+    width: 90%;
+    height: 50px;
+    padding:10px;
+}
+form button{
+    padding: 10px;
+    font-size: 18px;
+    margin-left: 10px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;   
+}
+form button:hover{
+    background: #505050;
+    color: #fff;
+}
+.Social-media .Social{
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Social-media .Social li{
+    display: block;
+    margin-left: 20px;
+    font-size: 25px;
+}
+.Social-media .Social li a{
+  
+    text-decoration: none;
+    color: #000;
+}
+@media(max-width:667px){
+    form{
+    width: 100%; 
+    }
+    .Social-media .Social li{
+        width: 300px;
+    }
+}
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: black;
+    
+}
+footer .text{
+    background-color: black;
+    color:#fff;
+    text-align: center;
+    padding: 20px;
+}
+.darkcolor{
+    color:#fff;
+}
+.darkBg{
+    background: #000;
+}
+/* body{
+    background: #000;
+    color:#fff;
+} */
